@@ -64,7 +64,6 @@ li{
 header,footer{
       color: var(--colore-testo);
       width: 100%;
-      min-height: 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -75,16 +74,18 @@ header,footer{
 }
 
 header{
-      top:0;
-      left: 0;
+    height: 40px;
+    top:0;
+    left: 0;
 }
 
 footer{
-      padding: 10px 0;
-      background-color: var(--colore-bg-footer);
-      color: var(--colore-testo-footer);
-      bottom: 0;
-      left: 0;
+    height: 65px;
+    padding: 10px 0;
+    background-color: var(--colore-bg-footer);
+    color: var(--colore-testo-footer);
+    bottom: 0;
+    left: 0;
 }
 
 /*---- Button ---*/
@@ -221,6 +222,7 @@ main .container .user{
     background-color: #fff;
     position: relative;
     width: calc(100%/6);
+    padding-top: 56.25%;
 }
 
 
