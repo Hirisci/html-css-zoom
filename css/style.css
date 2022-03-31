@@ -68,7 +68,7 @@ header,footer{
       display: flex;
       justify-content: space-between;
       align-items: center;
-      position: fixed;
+      position: relative;
       background-color: var(--colore-bg-primario);
       z-index: 10;
       padding: 5px 2.5px;
@@ -206,7 +206,21 @@ header .menu .record .circle .cirlce-red{
 main {
     background-color: var(--colore-bg-primario);
     height: calc(100vh - 105px);
-    margin-top: 40px;
+}
+
+main .container{
+    overflow: auto;
+    max-width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main .container .user{
+    background-color: #fff;
+    position: relative;
+    width: calc(100%/6);
 }
 
 
