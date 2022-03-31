@@ -40,10 +40,9 @@ li{
     --colore-bg-primario: #111111;
 
     /*- DIMENSIONI GUTTER E SPAZIATURE-*/
-    --gutter: 1em;
-    --gutter-smal: 0.5em;
-    --gutter-big: 2em;
-    --spaziatura-section: 200px; 
+    --gutter: 1.5rem;
+    --gutter-smal:  1rem;
+    --gutter-big: 2.5rem;
 }
 
 /*╔═══════════════╗
@@ -51,7 +50,9 @@ li{
   ╚═══════════════╝*/
 
   header,footer{
+      color: var(--colore-testo);
       width: 100%;
+      min-height: 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -76,5 +77,16 @@ li{
 /*╔═══════════════╗
     TAG SEMANTICI
   ╚═══════════════╝*/
+
+/*---HEADER---*/
+
+header .menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: var(--gutter);
+}
+
+
 
 
