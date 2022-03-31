@@ -36,6 +36,7 @@ li{
  :root{
     /*- COLORI -*/
     --colore-testo: #fff;
+    --colore-testo-secondario: #cecece;
     --colore-testo-titolo: #000;
     /* --colore-bg-primario: #111111; */
     --colore-bg-primario: rgb(161, 142, 142);
@@ -61,6 +62,7 @@ li{
       position: fixed;
       background-color: var(--colore-bg-primario);
       z-index: 10;
+      padding: 5px 0;
   }
 
   header{
@@ -116,4 +118,31 @@ header .menu .icons-scudo .fa-check{
     transform: translate(-50%,-50%);
 }
 
+header .menu .record{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+    column-gap: var(--gutter-smal) ;
+}
 
+header .menu .record .circle {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: var(--colore-testo-secondario);
+}
+
+header .menu .record .circle .cirlce-red{
+    position: absolute;
+    z-index: 2;
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    background-color: red;  
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    
+}
