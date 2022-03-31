@@ -37,7 +37,9 @@ li{
     /*- COLORI -*/
     --colore-testo: #fff;
     --colore-testo-titolo: #000;
-    --colore-bg-primario: #111111;
+    /* --colore-bg-primario: #111111; */
+    --colore-bg-primario: rgb(161, 142, 142);
+    --colore-bg-secondario: #0a0b0b;
 
     /*- DIMENSIONI GUTTER E SPAZIATURE-*/
     --gutter: 1.5rem;
@@ -85,7 +87,16 @@ header .menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    column-gap: var(--gutter);
+    column-gap: var(--gutter-smal);
+}
+
+header .menu > * {
+    background-color: var(--colore-bg-secondario);
+    height: 20px;
+    line-height: 20px;
+    min-width:20px;
+    text-align: center;
+    border-radius: 5px;
 }
 
 header .menu .icons-scudo{
