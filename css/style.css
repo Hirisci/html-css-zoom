@@ -207,6 +207,7 @@ header .menu .record .circle .cirlce-red{
 main {
     background-color: var(--colore-bg-primario);
     height: calc(100vh - 105px);
+    padding: 20px;
 }
 
 main .container{
@@ -221,6 +222,7 @@ main .container{
 }
 
 main .container .user{
+    padding: 5px;
     background-color: #fff;
     border-radius: 5px;
     position: relative;
@@ -229,6 +231,29 @@ main .container .user{
     height: 0;
 }
 
+main .container .user{
+    background-image: url("../img/nerd2.1020x680.jpg");
+    background-size: cover;
+    background-color: #a8a8a8;
+    background-position: center;
+}
+
+main .container .user-info{
+    display: flex;
+    column-gap: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 2;
+    bottom: 5px;
+    left: 5px;
+}
+
+main .container .user-info i{
+    color: red;
+}
 
 
 /*--- FOOTER ---*/
