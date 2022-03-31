@@ -58,6 +58,7 @@ li{
       align-items: center;
       position: fixed;
       background-color: var(--colore-bg-primario);
+      z-index: 10;
   }
 
   header{
@@ -87,6 +88,21 @@ header .menu{
     column-gap: var(--gutter);
 }
 
+header .menu .icons-scudo{
+    position: relative;
+}
 
+header .menu .icons-scudo .fa-shield{
+    color: #67d669;
+}
+
+header .menu .icons-scudo .fa-check{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 2;
+    color: black;
+    transform: translate(-50%,-50%);
+}
 
 
